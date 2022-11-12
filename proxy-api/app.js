@@ -10,8 +10,8 @@ app.set('json spaces', 2);
 app.get('/gettoken', async function (req, res) {
 
     //Set up URL to query
-    let appId = "Insert AppId here";
-    let hashToken = "Insert HashToken here";
+    let appId = "0zt7vrt07b";
+    let hashToken = "MHp0N3ZydDA3YnxVVjRhRFRQR1d2OUZXTGtvc2g5Zzc3aWRCeUJXNkF6NThSSXMwYlNW";
     let url = `https://api.iq.inrix.com/auth/v1/appToken?appId=${appId}&hashToken=${hashToken}`;
 
     //Set up query method
