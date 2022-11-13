@@ -13,7 +13,7 @@
     >
       
 
-      <v-toolbar-title>HubHub</v-toolbar-title>
+      <v-toolbar-title>GetMeTheRoute</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
