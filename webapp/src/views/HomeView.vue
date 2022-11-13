@@ -4,7 +4,10 @@
   <!-- <MapTest/> -->
   
   <WarehouseInfoVue/>
-  </div>
+      <home/>
+      <home_trucks_img/>
+    </div>
+
 </template>
 
 <script>
@@ -12,12 +15,16 @@
 
 // import MapTest from '../components/MapTest.vue'
 import WarehouseInfoVue from '@/components/WarehouseInfo.vue';
+import home from '@/components/HomePage.vue'
+import home_trucks_img from '@/components/ImageFmt.vue'
 
 export default {
   name: 'HomeView',
   components: {
     // MapTest,
     WarehouseInfoVue
+    home,
+    home_trucks_img
   }
 }
 </script>

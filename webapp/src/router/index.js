@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import home from '../views/HomeView.vue'
+// import addTrip from '../views/AddTripView.vue'
 
 Vue.use(VueRouter)
 
@@ -8,19 +9,23 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: home
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/addTrip',
+    name: 'addTrip',
+    component: () => import(/* webpackChunkName: "addTrip"*/ '../components/AddTrip')
+  },
+  {
+    path: '/addTripForm',
+    name: 'addTripForm',
+    component: () => import(/* webpackChunkName: "addTrip"*/ '../components/AddTripForm')
+  },
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
