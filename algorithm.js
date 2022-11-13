@@ -1,3 +1,7 @@
+//lat and lng are in degrees in that sequence.
+//distance is in km
+
+
 function rad2degr(rad) { return rad * 180 / Math.PI; }
 function degr2rad(degr) { return degr * Math.PI / 180; }
 
@@ -61,3 +65,14 @@ function getHub(nodes){
     }
     return hub;
 }
+
+var listOfNodes = [
+
+    [23.03,	72.58],
+    [26.9167, 75.8667],
+    [21.2379,81.6337],
+    [22.7206, 75.8472]
+
+];
+
+console.log(getHub(listOfNodes));
