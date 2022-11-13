@@ -79,6 +79,7 @@
 
 <script>
   export default {
+    name: 'addTripForm',
     data: () => ({
       valid: true,
       source: '',
