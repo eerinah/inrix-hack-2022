@@ -2,36 +2,6 @@
   <form>
     <v-text-field
       class= "mr-15 ml-15"
-      v-model="source"
-      :rules="sourceRules"
-      label="Source"
-      required
-      @input="$v.source.$touch()"
-      @blur="$v.source.$touch()"
-    ></v-text-field>
-
-    <v-text-field
-      class= "mr-15 ml-15"
-      v-model="destination"
-      :rules="destinationRules"
-      label="Destination"
-      required
-      @input="$v.destination.$touch()"
-      @blur="$v.destination.$touch()"
-    ></v-text-field>
-
-    <v-text-field
-      class= "mr-15 ml-15"
-      v-model="weight"
-      :rules="weightRules"
-      label="Weight of Payload"
-      required
-      @input="$v.weight.$touch()"
-      @blur="$v.weight.$touch()"
-    ></v-text-field>
-
-    <v-text-field
-      class= "mr-15 ml-15"
       type= "time"
       v-model="startTime"
       :rules="startTimeRules"
@@ -79,20 +49,8 @@
 
 <script>
   export default {
+    name: 'addTripForm',
     data: () => ({
-      valid: true,
-      source: '',
-      sourceRules: [
-        v => !!v || 'Source is required',
-      ],
-      weight: '',
-      weightRules: [
-      v => !!v || 'Weight is required',
-      ],
-      destination: '',
-      destinationRules: [
-      v => !!v || 'Weight is required',
-      ],
       startTime: '00:00',
       startTimeRules: [
       v => !!v || 'Operational starting hour is required',

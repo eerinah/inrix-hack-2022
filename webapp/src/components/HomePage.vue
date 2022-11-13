@@ -5,7 +5,7 @@
         class="mb-5"
         cols = 12 >
           <h1 class="display-2 font-weight-bold mb-3">
-            Sign-Up or Log-In
+            Welcome. Let's help you optimize your truck routes. 
           </h1>
         </v-col>
 
@@ -15,14 +15,9 @@
                 class="ma-4"
                 outlined
                 color="indigo"
+                to="/addTrip"
                 >
-                Sign Up
-                </v-btn>
-                <v-btn
-                class="ma-4"
-                color="indigo"
-                >
-                Login
+                Add a Trip
                 </v-btn>
             </div>
 
