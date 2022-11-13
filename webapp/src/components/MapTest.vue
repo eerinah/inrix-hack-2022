@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container>
       <div>
         <h2>Search and add a pin</h2>
         <GmapAutocomplete
@@ -27,7 +27,7 @@
       />
       
       </GmapMap>
-    </div>
+    </v-container>
   </template>
 
 <script>
