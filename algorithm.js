@@ -57,8 +57,6 @@ function getHub(nodes){
     var midPoint = getLatLngCenter(nodes);
     var hub = nodes[0];
     for (var i=0; i<nodes.length; i++) {
-        var lat = degr2rad(nodes[i][0]);
-        var lng = degr2rad(nodes[i][1]);
         if(distance(hub[0],hub[1],midPoint[0],midPoint[1])>distance(nodes[i][0],nodes[i][1],midPoint[0],midPoint[1])){
             hub = nodes[i];
         }
